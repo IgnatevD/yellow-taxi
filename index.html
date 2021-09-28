@@ -6,30 +6,94 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.scss" />
     <title>Yellow Taxi</title>
   </head>
   <body>
-    <header><a> Логотип </a></header>
-    <div>
-      <ul>
-        <li>
-          <a href="">Вакансия водитель</a>
+    <header>
+      <div class="container">
+        <a class="logo__link" href="http://yellow-taxi.com.ua">
+          <img
+            class="logo__img"
+            src="./img/LogoTaxi.png"
+            alt="Logo Yellow-Taxi"
+          />
+        </a>
+        <h1 class="titel">Корпоративное такси №1 в Харькове</h1>
+      </div>
+    </header>
+    <div class="container">
+      <ul class="container__list">
+        <li class="container__item">
+          <a
+            class="container__link"
+            href="http://yellow-taxi.com.ua"
+            target="_blank"
+          >
+            стать водителем такси
+          </a>
         </li>
-        <li>
-          <a href="">Сайт</a>
+        <li class="container__item">
+          <a
+            class="container__link"
+            href="http://yellow-taxi.com.ua"
+            target="_blank"
+          >
+            <svg class="link__icon">
+              <use href="./img/sprite.svg#icon-sphere"></use>
+            </svg>
+            <span> наш Сайт</span>
+          </a>
         </li>
-        <li>
-          <a href="">Приложение айфон</a>
+        <li class="container__item">
+          <a
+            class="container__link"
+            href="https://apps.apple.com/us/app/yellowtaxi/id1517788512?l=ru&ls=1"
+            target="_blank"
+          >
+            <svg class="link__icon">
+              <use href="./img/sprite.svg#icon-appleinc"></use>
+            </svg>
+            <span>Приложение айфон</span>
+          </a>
         </li>
-        <li>
-          <a href="">Приложение андроид</a>
+        <li class="container__item">
+          <a
+            class="container__link"
+            href="https://play.google.com/store/apps/details?id=com.ligataxi.khark.yellow.client"
+            target="_blank"
+          >
+            <svg class="link__icon">
+              <use href="./img/sprite.svg#icon-android"></use>
+            </svg>
+            <span>Приложение андроид</span>
+          </a>
         </li>
       </ul>
-      <div>
-        <a href="">интсагарм</a>
-        <a href="">фуйсбук</a>
+      <div class="network__container">
+        <a class="link__network" href="" target="_blank">
+          <svg class="link__network--icon">
+            <use href="./img/sprite.svg#icon-instagram"></use>
+          </svg>
+        </a>
+        <a class="link__network" href="" target="_blank">
+          <svg class="link__network--icon">
+            <use href="./img/sprite.svg#icon-facebook"></use>
+          </svg>
+        </a>
       </div>
+
+      <button class="button_tel" type="button">
+        <svg class="button__icon">
+          <use href="./img/sprite.svg#icon-phone"></use>
+        </svg>
+      </button>
     </div>
     <script srt="./index.js"></script>
   </body>
